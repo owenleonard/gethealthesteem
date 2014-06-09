@@ -1,0 +1,166 @@
+html {
+	min-height: 100%;
+	background-color: #D7DAA4;
+}
+
+body {
+	font-size: 0.9em;
+	font-family: "Dejavu Sans",sans-serif;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+.wrapper {
+	background-color: #D7DAA4;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.nav {
+	min-width: 200px;
+	float: left;
+}
+.menu {
+	width: 198px;
+	list-style: none;
+	-webkit-padding-start: 0;
+	-moz-padding-start: 0;
+	margin: 0;
+}
+.menu li a {
+	color: #000;
+	display: block;
+	padding: 10px 0;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid #D7DAA4;
+	margin: 2px 0;
+}
+.menu li a:hover {
+	font-weight: bold;
+	border: 1px solid rgba(0,0,0,.2);
+	background: radial-gradient(#F7F8E5, #D7DAA4);
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+
+.calendar {
+	min-width: 200px;
+	float: left;
+}
+.calendar ul {
+	list-style: none;
+	-webkit-padding-start: 0;
+	margin: 0;
+}
+.calendar ul li a {
+	color: #000;
+	display: block;
+	padding: 10px 0;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid #D7DAA4;
+	margin: 2px 0;
+}
+.calendar ul li a:hover {
+	font-weight: bold;
+	border: 1px solid rgba(0,0,0,.2);
+	background: radial-gradient(#F7F8E5, #D7DAA4);
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+
+
+.header {
+	height: 230px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FAFAF4;
+	width: 800px;
+	font-size: 8em;
+}
+.header span {
+	text-align: right;
+	font-size: .5em;
+	float: right;
+	margin-top: -240px;
+	margin-right: 10px;
+	color: #136D9F;
+}
+
+
+.section {
+	padding: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FAFAF4;
+	width: 771px;
+	float: left;
+}
+
+
+.article {
+	padding: 24px;
+	overflow: hidden;
+	background-color: #F5F4FA;
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 10px;
+	margin-bottom: 10px;
+	box-shadow: 2px 2px 2px 1px rgba(0,0,0,.3);
+}
+.article h1 {
+	font-size: 1.5em;
+}
+.article h2 {
+	font-size: 1.25em;
+}
+.article img {
+	margin: 10px;
+	border: none;
+}
+
+
+.footer {
+	font-size: 0.75em;
+	text-align: center;
+	color: #000;
+	padding: 1em 0;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	background-color: #FAFAF4;
+}
+
+.footer a{
+	text-decoration: none;
+}
+
+
+
+
+
+.img_link {
+	text-decoration: none;
+}
+
+.image_left {
+	float: left;
+}
+
+#browser-tip {
+	font-size: 1.75em;
+	text-align: center;
+	color: darkred;
+	margin-bottom: 2em;
+}
+
+.service {
+	float: left;
+	width: 50%;
+}
