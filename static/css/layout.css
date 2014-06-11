@@ -6,23 +6,21 @@ html {
 body {
 	font-size: 0.9em;
 	font-family: "Dejavu Sans",sans-serif;
-	margin: 0;
 	box-sizing: border-box;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-
-.wrapper {
-	background-color: #D7DAA4;
 	width: 1200px;
 	margin: 0 auto;
 }
 
-.nav {
-	min-width: 200px;
+.wrapper {
+	background-color: #D7DAA4;
+	width: 800px;
 	float: left;
+}
+
+.nav {
+	width: 200px;
+	float: left;
+	margin-top: 230px;
 }
 .menu {
 	width: 198px;
@@ -50,8 +48,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 .calendar {
-	min-width: 200px;
+	width: 200px;
 	float: left;
+	margin-top: 230px;
 }
 .calendar ul {
 	list-style: none;
@@ -76,7 +75,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	box-shadow: 2px 2px 2px rgba(0,0,0,.3);
 }
 
-
 .header {
 	height: 230px;
 	margin-left: auto;
@@ -94,25 +92,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	color: #136D9F;
 }
 
-
 .section {
 	padding: 1em;
-	margin-left: auto;
-	margin-right: auto;
 	background-color: #FAFAF4;
-	width: 771px;
-	float: left;
 }
 
-
 .article {
-	padding: 24px;
-	overflow: hidden;
+	padding: 1em;
 	background-color: #F5F4FA;
 	border: 1px solid rgba(0,0,0,.1);
 	border-radius: 10px;
 	margin-bottom: 10px;
 	box-shadow: 2px 2px 2px 1px rgba(0,0,0,.3);
+	overflow: hidden;
 }
 .article h1 {
 	font-size: 1.5em;
@@ -121,29 +113,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	font-size: 1.25em;
 }
 .article img {
-	margin: 10px;
+	margin-right: 10px;
 	border: none;
 }
-
 
 .footer {
 	font-size: 0.75em;
 	text-align: center;
 	color: #000;
 	padding: 1em 0;
-	margin-left: auto;
-	margin-right: auto;
-	clear: both;
 	background-color: #FAFAF4;
 }
 
 .footer a{
 	text-decoration: none;
 }
-
-
-
-
 
 .img_link {
 	text-decoration: none;
@@ -160,6 +144,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	margin-bottom: 2em;
 }
 
+.service:first-of-type {
+	clear: both;
+}
 .service {
 	float: left;
 	width: 50%;
