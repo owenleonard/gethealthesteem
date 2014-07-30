@@ -1,0 +1,17 @@
+{% extends "website/base.html" %}
+{% block title %}Event{% endblock %}
+
+{% block content %}
+<div class="article">
+	<h1>{{ event.title }}</h1>
+	<div class="event-time">
+	{% if event.starttime.date == event.endtime.date %}
+		{{ event.starttime|date }} {{ event.starttime|time:"TIME_FORMAT" }} - {{ event.endtime|time:"TIME_FORMAT" }}
+	{% else %}
+		{{ event.starttime }} - {{ event.endtime }}
+	{% endif %}
+	</div>
+	<div class="event-time">{{ event.location }}</div>
+    <div class="event-description">{{ event.description|linebreaks }}</div>
+</div>
+{% endblock %}

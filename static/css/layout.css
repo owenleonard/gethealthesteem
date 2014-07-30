@@ -50,7 +50,7 @@ body {
 .calendar {
 	width: 200px;
 	float: left;
-	margin-top: 230px;
+	margin-top: 238px;
 }
 .calendar ul {
 	list-style: none;
@@ -61,7 +61,7 @@ body {
 	color: #000;
 	display: block;
 	padding: 10px 0;
-	line-height: 30px;
+	line-height: 15px;
 	text-decoration: none;
 	text-align: center;
 	border: 1px solid #D7DAA4;
@@ -73,6 +73,10 @@ body {
 	background: radial-gradient(#F7F8E5, #D7DAA4);
 	border-radius: 5px;
 	box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+
+.event-time {
+	font-size: .75em;
 }
 
 .header {

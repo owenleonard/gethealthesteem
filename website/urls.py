@@ -11,4 +11,5 @@ urlpatterns = patterns('website.views',
     url(r'(?i)sports$', 'sports'),
     url(r'(?i)lifecoach$', 'lifecoach'),
     url(r'(?i)downloads$', 'downloads'),
+    url(r'(?i)events/(?P<event_id>\d+)/details$', 'event_details'),
 )

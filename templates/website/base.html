@@ -67,11 +67,16 @@
 
 		<div class="calendar">
 			<ul>
-				<li><a href="#">Item 1</a></li>
-				<li><a href="#">Item 2</a></li>
-				<li><a href="#">Item 3</a></li>
-				<li><a href="#">Item 4</a></li>
-				<li><a href="#">Item 5</a></li>
+				{% for event in events %}
+				<li>
+					<a href="/events/{{ event.id }}/details">
+						<span class="event-title">{{ event.title }}</span>
+						<div class="event-time">
+							{{ event.starttime }}
+						</div>
+					</a>
+				</li>
+				{% endfor %}
 			</ul>
 		</div>
 
