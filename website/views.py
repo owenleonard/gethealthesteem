@@ -1,6 +1,6 @@
 from datetime import date
 from django.shortcuts import render_to_response, get_object_or_404
-from website.models import Service, Event
+from website.models import Service, Event, Content
 
 # helper methods
 def events():
@@ -12,7 +12,8 @@ def index(request):
 
 def drbetty(request):
     services = Service.objects.filter(display=True)
-    return render_to_response('website/drbetty.html', {'header': 'Dr. Betty', 'services': services, 'events': events()})
+    content = Content.objects.filter(title="profile").first()
+    return render_to_response('website/drbetty.html', {'header': 'Dr. Betty', 'services': services, 'events': events(), 'content': content})
 
 def health(request):
     return render_to_response('website/health.html', {'header': 'Health', 'events': events()})
