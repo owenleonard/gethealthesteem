@@ -8,7 +8,8 @@ def events():
 
 # Create your views here.
 def index(request):
-    return render_to_response('website/index.html', {'header': '', 'events': events()})
+    content = Content.objects.filter(title="home").first()
+    return render_to_response('website/index.html', {'header': '', 'events': events(), 'content': content})
 
 def drbetty(request):
     services = Service.objects.filter(display=True)
