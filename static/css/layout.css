@@ -87,13 +87,23 @@ body {
 	width: 800px;
 	font-size: 8em;
 }
-.header span {
+
+.slogan,
+.header-title {
 	text-align: right;
-	font-size: .5em;
 	float: right;
-	margin-top: -240px;
 	margin-right: 10px;
 	color: #136D9F;
+}
+
+.header-title {
+	font-size: .5em;
+	margin-top: -240px;
+}
+
+.slogan {
+	font-size: .20em;
+	margin-top: -45px;
 }
 
 .section {
